@@ -4,7 +4,14 @@ title: "README"
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
 # datacompostblantyre
 
@@ -26,32 +33,13 @@ remotes::install_github("Global-Health-Engineering/data-compost-blantyre-malawi"
 
 The package includes three datasets. Here are the variable descriptions. The paper metadata is stored in survey
 
-
-```r
+```{r example}
 library(datacompostblantyre)
 library(dplyr)
 ## basic example code
 
 survey |> 
     count(site)
-#> # A tibble: 15 × 2
-#>     site     n
-#>    <dbl> <int>
-#>  1     1    42
-#>  2     2     5
-#>  3     3     9
-#>  4     5   751
-#>  5     6   517
-#>  6     7    12
-#>  7     8    61
-#>  8     9    37
-#>  9    10     6
-#> 10    11    12
-#> 11    12    16
-#> 12    13     3
-#> 13    14    15
-#> 14    16    22
-#> 15    NA    25
 ```
 
 
