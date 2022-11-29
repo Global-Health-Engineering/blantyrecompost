@@ -19,4 +19,8 @@ Suggests:
     tidyr,
     ggplot2,
     here,
-    janitor
+    janitor,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+URL: https://global-health-engineering.github.io/datacompostblantyre/
